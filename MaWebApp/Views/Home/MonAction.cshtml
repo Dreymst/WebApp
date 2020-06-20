@@ -1,0 +1,17 @@
+﻿@using MonTP.Entities
+@model List<MaWebApp.Models.EleveViewModel>
+    <table>
+        <tr>
+            <th>Identité de l'étudiant  </th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var etudiant in Model)
+        {
+            <tr>
+                <td>@etudiant.Identite</td>
+                <td><button>Détails</button></td>
+            </tr>
+
+        }
+    </table>
